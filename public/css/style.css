@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(245, 238, 230);
+}
+
+.resdata {
+    display: flex;
+}
+
+#site-name {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+}
+
+#site-name a {
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black
+}
+
+img {
+    padding-right: 30px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+button a {
+    text-decoration: none;
+    color: brown;
+}
+
+button {
+    border: 2px solid rgb(51, 78, 51);
+    border-radius: 5px;
+    height: 30px;
+    
+}
+
+
+button:hover {
+    background-color: rgb(37, 33, 32);
+    font-size: larger;
+}
+#details
+{
+    margin-top:35px;
+}
+#details h3{
+    color: crimson;
+    font-style: italic;
+    animation: left_to_right 3s linear infinite;
+}
+@keyframes left_to_right{
+	from{
+    	margin-left: 0px;
+    }
+	to{
+    	margin-left:100px;
+    }
+}
+#details p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:darkblue;
+}
+#headingmenu{
+    text-align: center;
+    color: rgb(46, 14, 255);
+}
+#homehead{
+    text-align: center;
+    animation: left_to_right 3s linear infinite;
+    color: rgb(2, 54, 75);
+}
+#footer{
+    
+    margin-top: 300px;
+}
+#detailsRes{
+    margin-top: 40px;
+}
+#detailsRes h2{
+    color: chocolate;
+}
+#detailsRes p{
+    color: rgb(23, 27, 49);
+}

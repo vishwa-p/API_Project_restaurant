@@ -1,0 +1,24 @@
+block variables
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width")
+    link(rel="stylesheet", href="/css/style.css")
+    title #{title} | Restaurant App
+  body
+    header#header
+      //- div.header-content
+      //-   h2#site-name
+      //-     a(href="/listMenu") Menu          
+      //-     a(href="/listRestaurant") Restaurants
+      //-     a(href="/") Home
+    main#main
+      block layout-content            
+      a(href="/listRestaurant") 
+        img(src="/images/restaurantBG.jpg", alt="",width="300")
+      a(href="/listMenu") 
+        img(src="/images/menu.jpg", alt="",width="300")
+    footer#footer
+      b
+        div &copy; Copyright Restaurant, 2022.

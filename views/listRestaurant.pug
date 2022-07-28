@@ -1,0 +1,20 @@
+extends layout
+
+block layout-content
+  button 
+    b 
+      a(href="/") Home
+  h1#headingmenu 
+    Here You have list of Restaurants and its details..
+  //we receive the movies variable in this file
+  //- - console.log(restaurants);
+  ul 
+    each res in restaurants 
+      li.resdata
+        #photo 
+          img(src=`${res.image}`, alt="",width="300")
+        #detailsRes
+          h2 #{res.businessname}
+          p Phone: #{res.phone}
+          p Email: #{res.email}
+          p Address: #{res.address}
